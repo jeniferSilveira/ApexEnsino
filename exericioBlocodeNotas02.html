@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+
+/*
+
+1.1) Criar um sistema pra converter moedas.
+Informe o valor em Dólares para serem convertidos para Reais,
+Vamos usar como base a cotação no valor de R$5,50.
+Exemplo, se informado U$1,00, o retorno será de: R$5,50
+
+
+
+let cotacaodolar_emreais = 5.50;
+
+
+*/
+
+
+let cotacaoReaisDolar = 5.50
+
+let valorDolares = parseFloat(prompt("Informe o valor em Dólares a ser convertido para Reais:"));
+
+let valorReais = (valorDolares * cotacaoReaisDolar)
+
+document.write("R$" + valorDolares.toFixed(2) + " equivale a $" + valorReais.toFixed(2));
+
+
+//parseInt() é usado para converter uma string em um número inteiro, enquanto parseFloat() lida com números de ponto flutuante
+//parseFloat(...): Converte o valor inserido pelo usuário em um número de ponto flutuante (float). Isso é necessário porque o que é retornado pelo prompt é uma string, e parseFloat converte essa string em um número decimal.
+
+</script>
+</html>

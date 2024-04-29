@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+
+//2) Solicite três números, retorne o maior dos três
+
+let primeiroNumero = parseFloat(prompt("Informe o primeiro número:"));
+let segundoNumero = parseFloat(prompt("Informe o segundo número:"));
+let terceiroNumero = parseFloat(prompt("Informe o terceiro número:"));
+
+
+let numeroMaior
+
+
+if (primeiroNumero >= segundoNumero && primeiroNumero >= terceiroNumero) {
+    numeroMaior = primeiroNumero
+} else if (segundoNumero >= primeiroNumero && segundoNumero >= terceiroNumero) {
+    numeroMaior = segundoNumero
+} else {
+    numeroMaior = terceiroNumero
+}
+
+
+document.write("O maior número é: " + numeroMaior)
+
+
+
+
+
+
+
+
+
+</script>
+</html>

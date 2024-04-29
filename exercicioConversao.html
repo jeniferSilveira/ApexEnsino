@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+
+//7) Implemente um pequeno sistema onde o cliente informa a temperatura atual e a conversão que pode ser entre Celsius para Fahrenheit ou Farenheit para Celsius.
+
+
+// Solicitar a temperatura atual ao usuário
+let temperaturaAtual = parseFloat(prompt("Informe a temperatura atual:"))
+
+// Solicitar a conversão desejada ao usuário
+let conversao = prompt("Deseja converter a temperatura para Celsius (C) ou Fahrenheit (F)?")
+
+// Verificar a opção de conversão e realizar a conversão
+let temperaturaConvertida
+
+if (conversao.toUpperCase() === "C") {
+    // Converter Fahrenheit para Celsius
+    temperaturaConvertida = (temperaturaAtual - 32) * 5/9
+    document.write("A temperatura convertida para Celsius é: " + temperaturaConvertida.toFixed(2) + " °C")
+} else if (conversao.toUpperCase() === "F") {
+    // Converter Celsius para Fahrenheit
+    temperaturaConvertida = (temperaturaAtual * 9/5) + 32;
+    document.write("A temperatura convertida para Fahrenheit é: " + temperaturaConvertida.toFixed(2) + " °F")
+} else {
+    document.write("Opção de conversão inválida. Por favor, informe 'C' para Celsius ou 'F' para Fahrenheit.")
+
+}
+
+
+</script>
+</html>

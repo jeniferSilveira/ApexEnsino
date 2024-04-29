@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+
+/* 9) Crie um sistema, onde o cliente informa o salário recebido.
+Em seguida pergunte os valores a serem pagos sobre: conta de luz, telefone, água, mercado, lazer e aluguel.
+Retorne quanto irá sobrar do seu salário.
+*/
+
+// Solicitar ao cliente o salário recebido
+let salario = parseFloat(prompt("Informe o seu salário:"));
+
+// Solicitar ao cliente os valores a serem pagos
+let contaLuz = parseFloat(prompt("Informe o valor da conta de luz:"))
+let contaTelefone = parseFloat(prompt("Informe o valor da conta de telefone:"))
+let contaAgua = parseFloat(prompt("Informe o valor da conta de água:"))
+let contaMercado = parseFloat(prompt("Informe o valor das compras no mercado:"))
+let contaLazer = parseFloat(prompt("Informe o valor das despesas com lazer:"))
+let contaAluguel = parseFloat(prompt("Informe o valor do aluguel:"))
+
+// Calcular o total das despesas
+let totalDespesas = contaLuz + contaTelefone + contaAgua + contaMercado + contaLazer + contaAluguel
+
+// Calcular o valor que irá sobrar do salário
+let sobraSalario = salario - totalDespesas
+
+// Exibir o valor que irá sobrar
+document.write("Sobra R$" + sobraSalario.toFixed(2) + " do seu salário.")
+
+
+</script>
+</html>
